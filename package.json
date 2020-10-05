@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-react-native-computools",
-  "version": "1.0.0",
-  "description": "Computools configuration for React Native. Starting `v2`, this plugin requires eslint `v6` or superior.",
+  "version": "1.0.1",
+  "description": "Computools eslint configuration for React Native.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/BogdanKusch/eslint-config-react-native-computools#readme",
   "dependencies": {
-    "@react-native-community/eslint-config": "^2.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "typescript": "^4.0.3"
+    "@react-native-community/eslint-config": "2.0.0",
+    "eslint-plugin-import": "2.22.1",
+    "typescript": "4.0.3"
   },
   "devDependencies": {
-    "eslint": "^7.10.0"
+    "eslint": "7.10.0"
   }
 }

@@ -25,10 +25,17 @@ module.exports = {
       },
     },
   },
-  extends: ['@react-native-community', 'plugin:import/errors', 'plugin:import/warnings', 'plugin:import/typescript'],
+  extends: [
+    '@react-native-community',
+    'plugin:eslint-comments/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+  ],
   rules: {
     '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/ban-tslint-comment': 'error',
+    'eslint-comments/no-use': ['error', {allow: []}],
     '@typescript-eslint/no-explicit-any': 'error',
     '@typescript-eslint/no-empty-interface': 'error',
     'no-duplicate-imports': 'error',
@@ -92,6 +99,6 @@ module.exports = {
     'import/named': 'error',
     'max-len': ['error', {code: 150}],
     '@typescript-eslint/member-ordering': ['error'],
-    'no-nested-ternary': 'error'
+    'no-nested-ternary': 'error',
   },
 };

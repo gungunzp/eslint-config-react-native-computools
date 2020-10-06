@@ -87,7 +87,6 @@ module.exports = {
     eqeqeq: 'error',
     'no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-constructor': ['error'],
-    // 'deprecation': 'error', // Not exist,
     'eol-last': ['error', 'always'],
     indent: 'off',
     '@typescript-eslint/indent': ['error', 2],

@@ -1,6 +1,7 @@
 module.exports = {
   plugins: ['import'],
   settings: {
+    'import/ignore': ['react-native'],
     'import/resolver': {
       node: {
         extensions: [
@@ -45,7 +46,6 @@ module.exports = {
     'no-magic-numbers': 'error',
     'implicit-arrow-linebreak': ['error', 'beside'],
     'prefer-arrow-callback': ['error', {allowNamedFunctions: true}],
-    // '@typescript-eslint/promise-function-async': 'error', // Not exist
     '@typescript-eslint/typedef': [
       'error',
       {
@@ -99,6 +99,17 @@ module.exports = {
     'max-len': ['error', {code: 150}],
     '@typescript-eslint/member-ordering': ['error'],
     'no-nested-ternary': 'error',
-    '@typescript-eslint/ban-types': ['error', {}],
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        extendDefaults: false,
+        types: {
+          unknown: 'Budu bit po zhope (c) Batarin',
+          any: 'Budu bit po zhope (c) Batarin',
+          object: 'Budu bit po zhope (c) Batarin',
+          '{}': 'Budu bit po zhope (c) Batarin',
+        }
+      }
+    ],
   },
 };

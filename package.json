@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-react-native-computools",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Computools eslint configuration for React Native.",
   "main": "index.js",
   "scripts": {

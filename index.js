@@ -41,7 +41,7 @@ module.exports = {
     'no-duplicate-imports': 'error',
     'no-useless-rename': 'error',
     'import/no-unassigned-import': [2, {allow: ['react-native-gesture-handler']}],
-    // '@typescript-eslint/member-access': 'error', // Not exist
+    '@typescript-eslint/explicit-member-accessibility': 'error',
     'no-magic-numbers': 'error',
     'implicit-arrow-linebreak': ['error', 'beside'],
     'prefer-arrow-callback': ['error', {allowNamedFunctions: true}],
@@ -99,5 +99,6 @@ module.exports = {
     'max-len': ['error', {code: 150}],
     '@typescript-eslint/member-ordering': ['error'],
     'no-nested-ternary': 'error',
+    '@typescript-eslint/ban-types': ['error', {}],
   },
 };
